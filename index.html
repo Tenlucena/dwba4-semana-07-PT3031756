@@ -5,104 +5,114 @@
   <title>IFSP - Página Inicial</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff;
+      margin: 0;
+      padding: 0;
     }
 
     header {
       background-color: #007a3d;
       color: white;
       padding: 20px;
-      display: flex;
-      align-items: center;
     }
 
     header img {
+      vertical-align: middle;
       height: 50px;
-      margin-right: 20px;
     }
 
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      padding: 40px;
+    header h1 {
+      display: inline-block;
+      margin: 0;
+      font-size: 30px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    header h2 {
+      margin: 0;
+      margin-left: 60px;
+      font-size: 20px;
+    }
+
+    .container {
       text-align: center;
+      margin: 30px auto;
+      width: 90%;
     }
 
-    main img {
+    .noticia {
+      display: inline-block;
+      width: 45%;
+      vertical-align: top;
+      margin: 20px;
+    }
+
+    .noticia img {
       width: 180px;
       height: auto;
-      margin-bottom: 10px;
     }
 
-    .item {
-      margin-bottom: 30px;
+    .noticia p {
+      margin: 5px 0;
     }
 
-    .bold {
+    .negrito {
       font-weight: bold;
     }
 
     footer {
-      text-align: center;
-      padding: 30px 10px;
       background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
       font-size: 14px;
     }
 
-    .facebook {
-      margin-top: 15px;
-    }
-
     .facebook img {
-      width: 32px;
-      vertical-align: middle;
+      width: 30px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="imagens/logo-ifsp.png" alt="Logo IFSP">
-    <div>
-      <h1>INSTITUTO FEDERAL</h1>
-      <h2>São Paulo</h2>
-    </div>
+    <img src="https://raw.githubusercontent.com/Tenlucena/dwba4-semana-07-PT3031756/main/Imagens/Logo.jpg" alt="Logo IFSP">
+    <h1>INSTITUTO FEDERAL</h1>
+    <h2>São Paulo</h2>
   </header>
 
-  <main>
-    <div class="item">
-      <img src="imagens/eleicoes-ifsp.png" alt="Eleições IFSP">
-      <p class="bold">Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</p>
+  <div class="container">
+    <div class="noticia">
+      <img src="https://raw.githubusercontent.com/Tenlucena/dwba4-semana-07-PT3031756/main/Imagens/eleicoes.jpg" alt="Eleições IFSP">
+      <p class="negrito">Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</p>
       <p>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
     </div>
 
-    <div class="item">
-      <img src="imagens/snct-ifsp.png" alt="Semana Nacional de Ciência e Tecnologia">
-      <p class="bold">IFSP: SNCT reúne atividades entre 19 e 24 de outubro</p>
+    <div class="noticia">
+      <img src="https://raw.githubusercontent.com/Tenlucena/dwba4-semana-07-PT3031756/main/Imagens/snct.jpg" alt="Semana Nacional de Ciência e Tecnologia">
+      <p class="negrito">IFSP: SNCT reúne atividades entre 19 e 24 de outubro</p>
       <p>Programação reúne iniciativas para aproximar pesquisadores e atividades culturais</p>
     </div>
 
-    <div class="item">
-      <img src="imagens/residencia-pedagogica.png" alt="Residência Pedagógica">
+    <div class="noticia">
+      <img src="https://raw.githubusercontent.com/Tenlucena/dwba4-semana-07-PT3031756/main/Imagens/residencia.png" alt="Residência Pedagógica">
       <p>IFSP oferece bolsa aos voluntários da Residência Pedagógica</p>
       <p>Bolsa de R$ 400,00 será paga pelo período de três meses</p>
     </div>
 
-    <div class="item">
-      <img src="imagens/interifs-2020.png" alt="III INTERIFS 2020">
-      <p class="bold">Inscrições abertas para a III Maratona InterIF</p>
-      <p>Maratona de programação do IFSP será realizada online, no dia 31 de outubro;<br>inscrições até 26 de outubro</p>
+    <div class="noticia">
+      <img src="https://raw.githubusercontent.com/Tenlucena/dwba4-semana-07-PT3031756/main/Imagens/maratona.jpeg" alt="III INTERIFS 2020">
+      <p class="negrito">Inscrições abertas para a III Maratona InterIF</p>
+      <p>Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
     </div>
-  </main>
+  </div>
 
   <footer>
     IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
     <div class="facebook">
       <a href="https://www.facebook.com/ifsppirituba" target="_blank">
-        <img src="imagens/facebook.png" alt="Facebook IFSP">
+        <img src="https://raw.githubusercontent.com/Tenlucena/dwba4-semana-07-PT3031756/main/Imagens/facebook.png" alt="Facebook IFSP">
       </a>
     </div>
   </footer>
